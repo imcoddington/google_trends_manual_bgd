@@ -1,0 +1,38 @@
+country_name,iso_two,iso_three,lang_full,lang
+Afghanistan,AF,AFG,"Pashto, Dari","ps, fa-AF"
+Somalia,SO,SOM,Somali,so
+Cuba,CU,CUB,Spanish,es
+Haiti,HT,HTI,Haitian Creole,ht
+Türkiye,TR,TUR,Turkish,tr
+India,IN,IND,Hindi,hi
+Myanmar,MM,MMR,Burmese,my
+Azerbaijan,AZ,AZE,Azerbaijani,az
+Ethiopia,ET,ETH,Amharic,am
+Burkina Faso,BF,BFA,Mòoré,mos
+Russia,RU,RUS,Russian,ru
+Bangladesh,BD,BGD,Bengali,bn
+Pakistan,PK,PAK,Urdu,ur
+Nigeria,NG,NGA,Hausa,ha
+China,CN,CHN,Mandarin Chinese,zh
+Islamic Republic of Iran,IR,IRN,Persian,fa
+Mali,ML,MLI,Bambara,bm
+Brazil,BR,BRA,Portuguese,pt
+Georgia,GE,GEO,Georgian,ka
+Central African Republic,CF,CAF,Sango,sg
+Albania,AL,ALB,Albanian,sq
+Burundi,BI,BDI,Kirundi,rn
+Sri Lanka,LK,LKA,"Sinhala, Tamil","si, ta"
+Palestine,PS,PSE,Arabic,ar
+Vietnam,VN,VNM,Vietnamese,vi
+Uzbekistan,UZ,UZB,Uzbek,uz
+Rwanda,RW,RWA,Kinyarwanda,rw
+Armenia,AM,ARM,Armenian,hy
+Moldova,MD,MDA,Romanian,ro
+Belarus,BY,BLR,"Belarusian, Russian","be, ru"
+Serbia,RS,SRB,Serbian,sr
+Nepal,NP,NPL,Nepali,ne
+North Macedonia,MK,MKD,Macedonian,mk
+Ghana,GH,GHA,Akan,ak
+The Gambia,GM,GMB,"Mandinka, Wolof ","mnk, wo"
+Kazakhstan,KZ,KAZ,"Kazakh, Russian","kk, ru"
+Ukraine,UA,UKR,"Ukrainian, Russina","uk, ru"
