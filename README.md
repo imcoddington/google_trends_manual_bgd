@@ -1,6 +1,5 @@
 this project generates google trends queries for specific country-language-topic combinations, downloads the raw data, and then post-processes that data with ratio-based linking. to run the project, follow the following steps:
 
----
 
 ## 1. generate queries
 
@@ -41,7 +40,6 @@ data/
 └── ...
 ```
 
----
 
 ## 3. process the raw files
 
@@ -59,7 +57,6 @@ data/
          the ratio-linked data, in which each keyword’s relative values are scaled to a consistent baseline using the anchor keyword. 
 
 
----
 
 ### notes
 
