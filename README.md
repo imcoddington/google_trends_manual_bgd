@@ -1,5 +1,6 @@
 this project generates google trends queries for specific country-language-topic combinations, downloads the raw data, and then post-processes that data with ratio-based linking. to run the project, follow the following steps:
 
+This fork specializes the program to work with divisions rather than just countries. Specifically, it allows us to work with data for specific divisions within Bangladesh rather than the country as one. 
 
 ## 1. generate queries
 

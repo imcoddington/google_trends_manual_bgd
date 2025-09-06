@@ -12,10 +12,10 @@ def main():
 
     excel_file = "topic_keywords.xlsx"
     language_dict_file = "language_dict.csv"
-    country_language_mapping_file = "country_language_mapping.csv"
+    division_language_mapping_file = "division_language_mapping.csv"
 
-    TIMEFRAME = "2019-03-01 2024-06-01"
-    TIMEFRAME_PARAM = "2019-03-01%202024-06-01"
+    TIMEFRAME = "2004-01-01 2025-09-01"
+    TIMEFRAME_PARAM = "2004-01-01%202025-09-01"
     ANCHOR = "%2Fm%2F02nf_"  # email topic
     HL_PARAM = "en-US"      
     
@@ -23,8 +23,8 @@ def main():
     lang_df = pd.read_csv(language_dict_file, dtype=str)
     valid_languages = set(lang_df["alpha_two"].str.strip().tolist())
 
-    # country-language mapping
-    country_lang_map = pd.read_csv(country_language_mapping_file, dtype=str)
+    # division-language mapping
+    division_lang_map = pd.read_csv(division_language_mapping_file, dtype=str)
 
 
     # load all topics from the excel file
@@ -39,28 +39,28 @@ def main():
             col_dict[col.strip()] = clean_vals
         topics_data[sheet_name] = col_dict
 
-    # for each country row, we get the list of iso2 languages from 'lang' column
-    for _, row in country_lang_map.iterrows():
-        country_iso = row["iso_two"].strip()
-        country_name = row["country_name"].strip()
-        if not country_iso:
+    # for each division row, we get the list of iso2 languages from 'lang' column
+    for _, row in division_lang_map.iterrows():
+        division_iso = row["iso_two"].strip()
+        division_name = row["division_name"].strip()
+        if not division_iso:
             continue
         if pd.isna(row["lang"]):
-            langs_for_country = []
+            langs_for_division = []
         else:
-            langs_for_country = [l.strip() for l in row["lang"].split(",")]
+            langs_for_division = [l.strip() for l in row["lang"].split(",")]
 
-        if not langs_for_country:
+        if not langs_for_division:
             continue
 
-        for lang_iso in langs_for_country:
+        for lang_iso in langs_for_division:
             if lang_iso not in valid_languages:
                 # fall back to english
                 lang_iso = "en"
 
-            # create directory for (country, language)
+            # create directory for (division, language)
             lang_full = lang_df.loc[lang_df["alpha_two"] == lang_iso, "lang_name"].values[0]
-            out_dir = f"data/{country_name}_{lang_full}/queries"
+            out_dir = f"data/{division_name}_{lang_full}/queries"
             if not os.path.exists(out_dir):
                 os.makedirs(out_dir)
 
@@ -75,7 +75,7 @@ def main():
                 if not keywords:
                     continue
 
-                out_csv = os.path.join(out_dir, f"{country_iso}_{lang_iso}_{topic_name}_queries.csv")
+                out_csv = os.path.join(out_dir, f"{division_iso}_{lang_iso}_{topic_name}_queries.csv")
 
                 rows = []
                 # chunk keywords in groups of 4 + anchor (email)
@@ -83,17 +83,17 @@ def main():
                     quoted_keywords = ",".join([quote(k) for k in kw_group])
                     query_url = (
                         f"https://trends.google.com/trends/explore?"
-                        f"date={TIMEFRAME_PARAM}&geo={country_iso}&q={quoted_keywords},{ANCHOR}&hl={HL_PARAM}"
+                        f"date={TIMEFRAME_PARAM}&geo={division_iso}&q={quoted_keywords},{ANCHOR}&hl={HL_PARAM}"
                     )
                     rows.append([
-                        country_iso,
+                        division_iso,
                         topic_name,
                         "; ".join(kw_group), 
                         query_url
                     ])
 
                 if rows:
-                    df_out = pd.DataFrame(rows, columns=["country_iso_two","topic","keywords[list]","query url"])
+                    df_out = pd.DataFrame(rows, columns=["division_iso_two","topic","keywords[list]","query url"])
                     df_out.to_csv(out_csv, index=False, encoding="utf-8")
 
 if __name__ == "__main__":
