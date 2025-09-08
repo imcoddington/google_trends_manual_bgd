@@ -24,7 +24,7 @@ This fork specializes the program to work with divisions rather than just countr
 **after this step, your data directory structure should look like this:**
 
 ```
-data/
+data/bruh
 ├── cuba_spanish/
 │   ├── queries/
 │   │   ├── environment_cuba_spanish_queries.csv
