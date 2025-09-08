@@ -2,6 +2,7 @@ from selenium import webdriver
 import time
 import sys
 import pandas as pd
+import random
 
 # Load the hyperlinks from a text file
 def load_links(file_path, url_column = "query url"):
@@ -44,7 +45,7 @@ def open_links_in_new_windows(links):
                 driver.execute_script(f"window.open('{link}', '_blank');")  # Open each additional link in a new window
             
             # Add a short delay to avoid overwhelming the browser
-            time.sleep(1)
+            time.sleep(5+random.uniform(0,3))
         
         # Switch between windows to ensure they're loaded
         for i in range(len(links)):
@@ -67,11 +68,11 @@ def main():
         raise TypeError
 
     links = load_links(file_path)
-    print("Opening links in batches of 20...")
+    print("Opening links in batches of 10...")
     num_links = len(links)
-    num_batches = (num_links + 19) // 20  # Calculate number of batches of 20
+    num_batches = (num_links + 9) // 10  # Calculate number of batches of 20
     for batch in range(num_batches):
-        batch_links = links[batch*20:(batch+1)*20]
+        batch_links = links[batch*10:(batch+1)*10]
         print(f"Opening batch {batch + 1} with {len(batch_links)} links...")
         open_links_in_new_windows(batch_links)
         print("Press Enter to continue to the next batch...")
