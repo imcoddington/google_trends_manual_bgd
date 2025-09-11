@@ -45,12 +45,8 @@ def open_links_in_new_windows(links):
                 driver.execute_script(f"window.open('{link}', '_blank');")  # Open each additional link in a new window
             
             # Add a short delay to avoid overwhelming the browser
-            time.sleep(5+random.uniform(0,3))
+            time.sleep(8+random.uniform(0,4))
         
-        # Switch between windows to ensure they're loaded
-        for i in range(len(links)):
-            driver.switch_to.window(driver.window_handles[i])
-            time.sleep(0.2)  # Optional delay for viewing each window before switching
     finally:
         input("Press Enter to close all windows and quit...")  # Wait for user input to close windows
         driver.quit()

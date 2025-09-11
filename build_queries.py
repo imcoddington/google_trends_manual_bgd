@@ -8,6 +8,15 @@ def chunk_list(lst, size):
     for i in range(0, len(lst), size):
         yield lst[i : i + size]
 
+def dataframe_col_as_text_list(df, col_name, path):
+    if col_name not in df.columns:
+        raise ValueError(f"Column '{col_name}' not found in DataFrame from {path}")
+    rows = [str(v).strip() for v in df[col_name].dropna() if str(v).strip()]
+    # save rows to a text file
+    with open(path, "w", encoding="utf-8") as f:
+        for r in rows:
+            f.write(r + "\n")
+
 def main():
 
     excel_file = "topic_keywords.xlsx"
@@ -75,7 +84,7 @@ def main():
                 if not keywords:
                     continue
 
-                out_csv = os.path.join(out_dir, f"{division_iso}_{lang_iso}_{topic_name}_queries.csv")
+                out_csv = os.path.join(out_dir, f"{division_iso}_{lang_iso}_{topic_name}_queries.txt")
 
                 rows = []
                 # chunk keywords in groups of 4 + anchor (email)
@@ -94,7 +103,7 @@ def main():
 
                 if rows:
                     df_out = pd.DataFrame(rows, columns=["division_iso_two","topic","keywords[list]","query url"])
-                    df_out.to_csv(out_csv, index=False, encoding="utf-8")
+                    dataframe_col_as_text_list(df_out, "query url", out_csv)
 
 if __name__ == "__main__":
     main()
