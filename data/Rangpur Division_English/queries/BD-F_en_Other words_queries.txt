@@ -1,3 +1,3 @@
-https://trends.google.com/trends/explore?date=2004-01-01%202025-09-01&geo=BD-F&q=governorate,governorate,province,province,%2Fm%2F02nf_&hl=en-US
-https://trends.google.com/trends/explore?date=2004-01-01%202025-09-01&geo=BD-F&q=province,state,civil,civil,%2Fm%2F02nf_&hl=en-US
-https://trends.google.com/trends/explore?date=2004-01-01%202025-09-01&geo=BD-F&q=civil,society,%2Fm%2F02nf_&hl=en-US
+https://trends.google.com/trends/explore?date=2004-01-01%202025-09-01&geo=BD-F&q=governorate,governorate,province,province,Email&hl=en-US
+https://trends.google.com/trends/explore?date=2004-01-01%202025-09-01&geo=BD-F&q=province,state,civil,civil,Email&hl=en-US
+https://trends.google.com/trends/explore?date=2004-01-01%202025-09-01&geo=BD-F&q=civil,society,Email&hl=en-US

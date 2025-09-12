@@ -1,6 +1,6 @@
-https://trends.google.com/trends/explore?date=2004-01-01%202025-09-01&geo=BD-F&q=Ramadan,Eid%20al-Fitr,Eid%20al-Adha,Christmas,%2Fm%2F02nf_&hl=en-US
-https://trends.google.com/trends/explore?date=2004-01-01%202025-09-01&geo=BD-F&q=Christmas,Mawlid,Ashoura,Hijra,%2Fm%2F02nf_&hl=en-US
-https://trends.google.com/trends/explore?date=2004-01-01%202025-09-01&geo=BD-F&q=Hijra,Arba%27een,Arba%27een,Nowruz,%2Fm%2F02nf_&hl=en-US
-https://trends.google.com/trends/explore?date=2004-01-01%202025-09-01&geo=BD-F&q=Easter,welfare,retirement,pension,%2Fm%2F02nf_&hl=en-US
-https://trends.google.com/trends/explore?date=2004-01-01%202025-09-01&geo=BD-F&q=charity,Ashura,Arbaeen,Arbaeen,%2Fm%2F02nf_&hl=en-US
-https://trends.google.com/trends/explore?date=2004-01-01%202025-09-01&geo=BD-F&q=allowance,zaka,zaka,%2Fm%2F02nf_&hl=en-US
+https://trends.google.com/trends/explore?date=2004-01-01%202025-09-01&geo=BD-F&q=Ramadan,Eid%20al-Fitr,Eid%20al-Adha,Christmas,Email&hl=en-US
+https://trends.google.com/trends/explore?date=2004-01-01%202025-09-01&geo=BD-F&q=Christmas,Mawlid,Ashoura,Hijra,Email&hl=en-US
+https://trends.google.com/trends/explore?date=2004-01-01%202025-09-01&geo=BD-F&q=Hijra,Arba%27een,Arba%27een,Nowruz,Email&hl=en-US
+https://trends.google.com/trends/explore?date=2004-01-01%202025-09-01&geo=BD-F&q=Easter,welfare,retirement,pension,Email&hl=en-US
+https://trends.google.com/trends/explore?date=2004-01-01%202025-09-01&geo=BD-F&q=charity,Ashura,Arbaeen,Arbaeen,Email&hl=en-US
+https://trends.google.com/trends/explore?date=2004-01-01%202025-09-01&geo=BD-F&q=allowance,zaka,zaka,Email&hl=en-US

@@ -25,7 +25,7 @@ def main():
 
     TIMEFRAME = "2004-01-01 2025-09-01"
     TIMEFRAME_PARAM = "2004-01-01%202025-09-01"
-    ANCHOR = "%2Fm%2F02nf_"  # email topic
+    ANCHOR = "Email"  # email search term
     HL_PARAM = "en-US"      
     
     # language dict(iso2 -> full language name)
