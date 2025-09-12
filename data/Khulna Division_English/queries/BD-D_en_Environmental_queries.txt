@@ -19,7 +19,7 @@ https://trends.google.com/trends/explore?date=2004-01-01%202025-09-01&geo=BD-D&q
 https://trends.google.com/trends/explore?date=2004-01-01%202025-09-01&geo=BD-D&q=subsidize,natural%20fertilizer,chemical%20fertilizer,fertiliser,Email&hl=en-US
 https://trends.google.com/trends/explore?date=2004-01-01%202025-09-01&geo=BD-D&q=seed,potato,tomato,irrigation,Email&hl=en-US
 https://trends.google.com/trends/explore?date=2004-01-01%202025-09-01&geo=BD-D&q=drip%20irrigation,drip%20irrigation,technique,labourer,Email&hl=en-US
-https://trends.google.com/trends/explore?date=2004-01-01%202025-09-01&geo=BD-D&q=pasture%2C%20grazing%20land,fodder,pest,arid,Email&hl=en-US
+https://trends.google.com/trends/explore?date=2004-01-01%202025-09-01&geo=BD-D&q=pasture,fodder,pest,arid,Email&hl=en-US
 https://trends.google.com/trends/explore?date=2004-01-01%202025-09-01&geo=BD-D&q=erratic,erratic,management,soil,Email&hl=en-US
 https://trends.google.com/trends/explore?date=2004-01-01%202025-09-01&geo=BD-D&q=marsh,vegetation,drainage,drainage,Email&hl=en-US
 https://trends.google.com/trends/explore?date=2004-01-01%202025-09-01&geo=BD-D&q=drainage,moderate,organic,dust,Email&hl=en-US

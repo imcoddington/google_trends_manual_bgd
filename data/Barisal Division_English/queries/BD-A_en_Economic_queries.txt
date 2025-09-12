@@ -12,7 +12,7 @@ https://trends.google.com/trends/explore?date=2004-01-01%202025-09-01&geo=BD-A&q
 https://trends.google.com/trends/explore?date=2004-01-01%202025-09-01&geo=BD-A&q=debt,debt,livestock,loans,Email&hl=en-US
 https://trends.google.com/trends/explore?date=2004-01-01%202025-09-01&geo=BD-A&q=debts,debts,corruption,bribes,Email&hl=en-US
 https://trends.google.com/trends/explore?date=2004-01-01%202025-09-01&geo=BD-A&q=contract,smuggle,smuggler,business,Email&hl=en-US
-https://trends.google.com/trends/explore?date=2004-01-01%202025-09-01&geo=BD-A&q=freeze%2C%20suspension,freeze%2C%20suspension,fuel,foreign,Email&hl=en-US
+https://trends.google.com/trends/explore?date=2004-01-01%202025-09-01&geo=BD-A&q=suspension,freeze,fuel,foreign,Email&hl=en-US
 https://trends.google.com/trends/explore?date=2004-01-01%202025-09-01&geo=BD-A&q=foreign,investor,tariff,warehouse,Email&hl=en-US
 https://trends.google.com/trends/explore?date=2004-01-01%202025-09-01&geo=BD-A&q=warehouse,customs,customs,licence,Email&hl=en-US
 https://trends.google.com/trends/explore?date=2004-01-01%202025-09-01&geo=BD-A&q=licence,shipment,shipment,shipment,Email&hl=en-US
